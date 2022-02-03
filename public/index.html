@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">ENVELO</h1>
+    <p class="text">Możesz mieć swoją przesyłkę kilkanaście sekund. Rozpocznij klikając w przycisk</p>
+    <div class="inputs_container d-none">
+      <div>
+        <p>Numer telefonu</p>
+        <input type="text" class="telefon">
+        <p class="telError error d-none">Invalid telephone</p>
+      </div>
+      <div>
+        <p>Kod odbioru</p>
+        <input type="text" class="kod">
+        <p class="kodError error d-none">Invalid kod</p>
+      </div>
+    </div>
+    <button class="btn-checker d-none">Odbierz paczkę</button>
+    <button class="btn-opener">Odbierz paczkę</button>
+    <a href="#" class="popup_area d-none"></a>
+    <div class="popup d-none">
+      <div class="popup_title">Paczka odebrana!</div>
+      <p class="popup_text">Zrobiłeś to w czasie 10 sekund! Czy możemy zrobić dla Ciebie coś jeszcze?</p>
+      <div>
+        <button class="popup_btn btn_1st_step">To wszystko na dziś</button>
+        <button class="popup_btn btn_2nd_step">Odbierz kolejną paczkę</button>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </div>
+</body>
+</html>

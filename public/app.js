@@ -1,0 +1,12 @@
+import { checkInputs } from "./modules/validatorHandler.js";
+import { inputsHandler } from "./modules/inputsHandler.js";
+import { goToFirstStep } from "./modules/goToFirstStep.js";
+import { goToSecondStep } from "./modules/goToSecondStep.js";
+const buttonChecker = document.querySelector('.btn-checker');
+const buttonOpener = document.querySelector('.btn-opener');
+const btn1stStep = document.querySelector('.btn_1st_step');
+const btn2ndStep = document.querySelector('.btn_2nd_step');
+buttonChecker.addEventListener('click', checkInputs);
+buttonOpener.addEventListener('click', inputsHandler);
+btn1stStep.addEventListener('click', goToFirstStep);
+btn2ndStep.addEventListener('click', goToSecondStep);
